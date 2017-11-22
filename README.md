@@ -1,2 +1,2 @@
-# welcome-wizard
+# nomad-welcome-wizard
 Welcome overlay for post-installation setup
