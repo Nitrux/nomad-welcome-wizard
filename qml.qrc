@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file alias="main.qml">ui/qml/main.qml</file>
+        <file alias="Page1.qml">ui/qml/Page1.qml</file>
+        <file alias="Page2.qml">ui/qml/Page2.qml</file>
+        <file alias="Page3.qml">ui/qml/Page3.qml</file>
+        <file alias="Page4.qml">ui/qml/Page4.qml</file>
+        <file alias="Page5.qml">ui/qml/Page5.qml</file>
+        <file alias="Page6.qml">ui/qml/Page6.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>backgrounds/page1.png</file>
+        <file>backgrounds/page2.png</file>
+        <file>backgrounds/page3.png</file>
+        <file>backgrounds/page4.png</file>
+        <file>backgrounds/page5.png</file>
+        <file>backgrounds/page6.png</file>
+    </qresource>
+</RCC>
