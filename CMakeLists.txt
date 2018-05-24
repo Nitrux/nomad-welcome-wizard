@@ -14,7 +14,6 @@ find_package(
   COMPONENTS
     Core
     Quick
-    Svg
 
   REQUIRED
 )
@@ -30,5 +29,4 @@ target_link_libraries(
 
   Qt5::Core
   Qt5::Quick
-  Qt5::Svg
 )
