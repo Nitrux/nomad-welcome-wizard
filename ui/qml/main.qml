@@ -44,8 +44,7 @@ ApplicationWindow {
             anchors.leftMargin: 12
 
             onClicked: {
-                var curIndex = swipeView.currentIndex
-                swipeView.setCurrentIndex(curIndex > 0 ? --curIndex : 0)
+                swipeView.setCurrentIndex(swipeView.count - 1)
             }
         }
 
@@ -64,6 +63,7 @@ ApplicationWindow {
             text: "Next"
             anchors.verticalCenter: parent.verticalCenter
             anchors.rightMargin: 12
+            enabled: swipeView.currentIndex != (swipeView.count - 1)
 
             onClicked: {
                 var curIndex = swipeView.currentIndex
