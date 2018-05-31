@@ -1,5 +1,5 @@
-nomad-welcome-wizard (0.1-dev) unstable; urgency=medium
+nomad-welcome-wizard (0.1.1-dev) unstable; urgency=medium
 
-  * Initial release
+  * Fix : Executable not copied to bin
 
  -- Anupam Basak <anupam.basak27@gmail.com>  Fri, 29 Dec 2017 02:49:55 +0530
