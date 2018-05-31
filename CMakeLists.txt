@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-project(maui-welcome-wizard LANGUAGES CXX)
+project(nomad-welcome-wizard LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
@@ -14,13 +14,18 @@ find_package(
   COMPONENTS
     Core
     Quick
+    Concurrent
 
   REQUIRED
 )
 
 add_executable(
   ${PROJECT_NAME}
+
+  ShellHelper.h
+  ShellHelper.cpp
   main.cpp
+
   qml.qrc
 )
 
@@ -29,4 +34,5 @@ target_link_libraries(
 
   Qt5::Core
   Qt5::Quick
+  Qt5::Concurrent
 )
