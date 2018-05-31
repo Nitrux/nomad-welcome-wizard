@@ -36,3 +36,8 @@ target_link_libraries(
   Qt5::Quick
   Qt5::Concurrent
 )
+
+install(
+  TARGETS ${PROJECT_NAME}
+  RUNTIME DESTINATION bin
+)
