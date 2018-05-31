@@ -11,7 +11,7 @@ Page {
         id: softwareUpdaterShellHelper
 
         onCmdComplete: {
-            console.log('DriverInstaller :', returnCode);
+            console.log('SoftwareUpdater :', returnCode);
         }
     }
 
@@ -27,7 +27,7 @@ Page {
         id: systemSettingsShellHelper
 
         onCmdComplete: {
-            console.log('DriverInstaller :', returnCode);
+            console.log('SystemSettings :', returnCode);
         }
     }
 
@@ -60,7 +60,7 @@ Page {
         text: "Install GPU Drivers"
 
         onClicked: {
-            driverInstallerShellHelper.runCommand("konsole -e sudo apt install $(apt-cache search 'nvidia-[[:digit:]*]' | sort -r | head -n 1 | cut -d ' ' -f 1) nvidia-settings");
+            driverInstallerShellHelper.runCommand("konsole --noclose -e sudo apt install $(apt-cache search 'nvidia-[[:digit:]*]' | sort -r | head -n 1 | cut -d ' ' -f 1) nvidia-settings");
         }
     }
 
