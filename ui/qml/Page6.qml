@@ -1,5 +1,6 @@
 import QtQuick 2.10
 import QtQuick.Controls 2.3
+import QtQuick.Dialogs 1.2
 
 import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
@@ -7,11 +8,24 @@ Page {
     width: 1280
     height: 840
 
+    MessageDialog {
+        id: errorDialog
+
+        title: "Error"
+        icon: StandardIcon.Critical
+        standardButtons: StandardButton.Ok
+    }
+
     WelcomeWizard.ShellHelper {
         id: softwareUpdaterShellHelper
 
         onCmdComplete: {
             console.log('SoftwareUpdater :', returnCode);
+
+            if (returnCode > 0) {
+                errorDialog.text = "Error opening Software Updater"
+                errorDialog.visible = true;
+            }
         }
     }
 
@@ -20,6 +34,11 @@ Page {
 
         onCmdComplete: {
             console.log('DriverInstaller :', returnCode);
+
+            if (returnCode > 0) {
+                errorDialog.text = "Error Installing Nvidia Drivers"
+                errorDialog.visible = true;
+            }
         }
     }
 
@@ -28,6 +47,11 @@ Page {
 
         onCmdComplete: {
             console.log('SystemSettings :', returnCode);
+
+            if (returnCode > 0) {
+                errorDialog.text = "Error opening System Settings"
+                errorDialog.visible = true;
+            }
         }
     }
 
@@ -47,7 +71,7 @@ Page {
         text: "Software Updater"
 
         onClicked: {
-            softwareUpdaterShellHelper.runCommand("kcmshell5 org_nxos_softwareupdater");
+            softwareUpdaterShellHelper.runCommand("kcmshell5 org_nxos_softwareupdater1");
         }
     }
 

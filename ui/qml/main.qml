@@ -42,6 +42,7 @@ ApplicationWindow {
             text: "Skip"
             anchors.verticalCenter: parent.verticalCenter
             anchors.leftMargin: 12
+            enabled: swipeView.currentIndex != (swipeView.count - 1)
 
             onClicked: {
                 swipeView.setCurrentIndex(swipeView.count - 1)
@@ -63,11 +64,24 @@ ApplicationWindow {
             text: "Next"
             anchors.verticalCenter: parent.verticalCenter
             anchors.rightMargin: 12
-            enabled: swipeView.currentIndex != (swipeView.count - 1)
+            visible: swipeView.currentIndex != (swipeView.count - 1)
 
             onClicked: {
                 var curIndex = swipeView.currentIndex
                 swipeView.setCurrentIndex(curIndex < swipeView.count-1 ? ++curIndex : swipeView.count-1)
+            }
+        }
+
+        Button {
+            height: 24
+            anchors.right: parent.right
+            text: "Finish"
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.rightMargin: 12
+            visible: swipeView.currentIndex == (swipeView.count - 1)
+
+            onClicked: {
+                Qt.quit();
             }
         }
     }
