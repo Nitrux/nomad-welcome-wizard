@@ -2,8 +2,8 @@ import QtQuick 2.10
 import QtQuick.Controls 2.3
 
 Page {
-    width: 1024
-    height: 768
+    width: 1280
+    height: 840
 
     Image {
         anchors.fill: parent

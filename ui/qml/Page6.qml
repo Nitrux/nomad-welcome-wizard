@@ -4,8 +4,8 @@ import QtQuick.Controls 2.3
 import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
 Page {
-    width: 1024
-    height: 768
+    width: 1280
+    height: 840
 
     WelcomeWizard.ShellHelper {
         id: softwareUpdaterShellHelper

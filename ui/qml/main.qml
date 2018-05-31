@@ -4,10 +4,10 @@ import QtQuick.Controls 2.3
 ApplicationWindow {
     visible: true
 
-    minimumWidth: 1024
-    minimumHeight: 768
-    maximumWidth: 1024
-    maximumHeight: 768
+    minimumWidth: 1280
+    minimumHeight: 888
+    maximumWidth: 1280
+    maximumHeight: 888
 
     title: "MAUI Welcome Wizard"
 
