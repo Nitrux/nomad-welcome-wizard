@@ -1,0 +1,12 @@
+Source: nomad-welcome-wizard
+Section: main
+Priority: optional
+Maintainer: Anupam Basak <anupam.basak27@gmail.com>
+Build-Depends: debhelper (>= 9), g++ (>=7), cmake(>=3), extra-cmake-modules, qtbase5-dev, qtdeclarative5-dev
+Standards-Version: 4.0.0
+
+Package: nomad-welcome-wizard
+Architecture: i386 amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Welcome overlay for post-installation setup
+ Welcome overlay for post-installation setup for Nitrux OS (https;//nxos.org)
