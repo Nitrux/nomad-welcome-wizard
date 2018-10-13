@@ -17,7 +17,7 @@ Page {
     }
 
     WelcomeWizard.ShellHelper {
-        id: softwareUpdaterShellHelper
+        id: softwareCenterShellHelper
 
         onCmdComplete: {
             console.log('SoftwareUpdater :', returnCode);
@@ -30,7 +30,7 @@ Page {
     }
 
     WelcomeWizard.ShellHelper {
-        id: driverInstallerShellHelper
+        id: nitruxCompendiumShellHelper
 
         onCmdComplete: {
             console.log('DriverInstaller :', returnCode);
@@ -68,10 +68,10 @@ Page {
         anchors.bottom: parent.bottom
         anchors.leftMargin: 64
         anchors.bottomMargin: 128
-        text: "Software Updater"
+        text: "Software Center"
 
         onClicked: {
-            softwareUpdaterShellHelper.runCommand("kcmshell5 org_nxos_softwareupdater1");
+            softwareCenterShellHelper.runCommand("nx_software_center");
         }
     }
 
@@ -81,10 +81,10 @@ Page {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 128
-        text: "Install GPU Drivers"
+        text: "Find Support"
 
         onClicked: {
-            driverInstallerShellHelper.runCommand("konsole --noclose -e sudo apt install $(apt-cache search 'nvidia-[[:digit:]*]' | sort -r | head -n 1 | cut -d ' ' -f 1) nvidia-settings");
+            nitruxCompendiumShellHelper.runCommand("xdg-open https://nxos.org/en/compendium");
         }
     }
 

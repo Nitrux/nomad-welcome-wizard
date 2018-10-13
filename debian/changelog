@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.0.1) stable; urgency=medium
+
+  * Change buttons at final screen.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 12 Sep 2018 23:56:00 -0500
+
 nomad-welcome-wizard (1.0.0-dev) stable; urgency=medium
 
   * Initial Stable Release

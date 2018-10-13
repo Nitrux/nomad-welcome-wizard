@@ -9,7 +9,7 @@ ApplicationWindow {
     maximumWidth: 1280
     maximumHeight: 888
 
-    title: "MAUI Welcome Wizard"
+    title: "Welcome Wizard"
 
     SwipeView {
         id: swipeView
@@ -37,7 +37,7 @@ ApplicationWindow {
         anchors.bottom: parent.bottom
 
         Button {
-            height: 24
+            height: 32
             anchors.left: parent.left
             text: "Skip"
             anchors.verticalCenter: parent.verticalCenter
@@ -59,7 +59,7 @@ ApplicationWindow {
         }
 
         Button {
-            height: 24
+            height: 32
             anchors.right: parent.right
             text: "Next"
             anchors.verticalCenter: parent.verticalCenter
@@ -73,7 +73,7 @@ ApplicationWindow {
         }
 
         Button {
-            height: 24
+            height: 32
             anchors.right: parent.right
             text: "Finish"
             anchors.verticalCenter: parent.verticalCenter
