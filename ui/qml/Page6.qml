@@ -98,7 +98,7 @@ Page {
         text: "Open System Settings"
 
         onClicked: {
-            driverInstallerShellHelper.runCommand("systemsettings5");
+            systemSettingsShellHelper.runCommand("systemsettings5");
         }
     }
 }
