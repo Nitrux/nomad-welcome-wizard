@@ -20,10 +20,10 @@ Page {
         id: softwareCenterShellHelper
 
         onCmdComplete: {
-            console.log('SoftwareUpdater :', returnCode);
+            console.log('SoftwareCenter :', returnCode);
 
             if (returnCode > 0) {
-                errorDialog.text = "Error opening Software Updater"
+                errorDialog.text = "Error opening Software Center"
                 errorDialog.visible = true;
             }
         }
@@ -33,10 +33,10 @@ Page {
         id: nitruxCompendiumShellHelper
 
         onCmdComplete: {
-            console.log('DriverInstaller :', returnCode);
+            console.log('NitruxCompendium :', returnCode);
 
             if (returnCode > 0) {
-                errorDialog.text = "Error Installing Nvidia Drivers"
+                errorDialog.text = "Error opening Compendium"
                 errorDialog.visible = true;
             }
         }
@@ -84,7 +84,7 @@ Page {
         text: "Find Support"
 
         onClicked: {
-            nitruxCompendiumShellHelper.runCommand("xdg-open https://nxos.org/en/compendium");
+            nitruxCompendiumShellHelper.runCommand("xdg-open https://nxos.org/en/compendium/#help-and-support");
         }
     }
 

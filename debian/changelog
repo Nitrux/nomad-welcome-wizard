@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.0.4) stable; urgency=medium
+
+  * Update buttons.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 13 Sep 2018 18:43:00 -0500
+
 nomad-welcome-wizard (1.0.3) stable; urgency=medium
 
   * Use optimized images.
