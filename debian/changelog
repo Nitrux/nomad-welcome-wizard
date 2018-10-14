@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.0.6) stable; urgency=medium
+
+  * Update slides.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 14 Sep 2018 14:17:00 -0500
+
 nomad-welcome-wizard (1.0.5) stable; urgency=medium
 
   * Update buttons.
