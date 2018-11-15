@@ -1,15 +1,11 @@
 import QtQuick 2.10
 import QtQuick.Controls 2.3
+import QtQuick.Window 2.3
 
 ApplicationWindow {
-    visible: true
-
-    minimumWidth: 1280
-    minimumHeight: 888
-    maximumWidth: 1280
-    maximumHeight: 888
-
     title: "Welcome Wizard"
+    visible: true
+    visibility: "FullScreen"
 
     SwipeView {
         id: swipeView
