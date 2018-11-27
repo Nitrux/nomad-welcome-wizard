@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.0.9) stable; urgency=medium
+
+  * Open as FullScreen Application.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Tue, 27 Nov 2018 14:41:00 -0500
+
 nomad-welcome-wizard (1.0.8) stable; urgency=medium
 
   * Bump version.

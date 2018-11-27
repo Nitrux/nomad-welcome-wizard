@@ -1,4 +1,4 @@
-# NX Welcome Wizard [![Build Status](https://travis-ci.org/nomad-desktop/nx-welcome-wizard.svg?branch=master)](https://travis-ci.org/nomad-desktop/nx-welcome-wizard) 
+# NX Welcome Wizard [![Build Status](https://travis-ci.org/Nitrux/nx-welcome-wizard.svg?branch=master)](https://travis-ci.org/Nitrux/nx-welcome-wizard) 
 
 Welcome overlay for post-installation setup.
 
