@@ -1,8 +1,14 @@
+nomad-welcome-wizard (1.1.2) stable; urgency=medium
+
+  * Adjust images to the size of window.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sat, 01 Nov 2018 00:16:00 -0500
+
 nomad-welcome-wizard (1.1.1) stable; urgency=medium
 
   * Higher res images.
 
- -- Uri Herrera <uri_herrera@nxos.org>  Fri, 29 Nov 2018 18:03:00 -0500
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 30 Nov 2018 18:03:00 -0500
 
 nomad-welcome-wizard (1.1.0) stable; urgency=medium
 

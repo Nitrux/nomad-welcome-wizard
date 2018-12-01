@@ -6,7 +6,7 @@ import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
 Page {
     width: 2560
-    height: 1440
+    height: 1344
 
     MessageDialog {
         id: errorDialog
