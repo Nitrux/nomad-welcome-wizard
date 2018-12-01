@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.1.1) stable; urgency=medium
+
+  * Higher res images.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 29 Nov 2018 18:03:00 -0500
+
 nomad-welcome-wizard (1.1.0) stable; urgency=medium
 
   * Bump version.

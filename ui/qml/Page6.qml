@@ -5,8 +5,8 @@ import QtQuick.Dialogs 1.2
 import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
 Page {
-    width: 1280
-    height: 840
+    width: 2560
+    height: 1440
 
     MessageDialog {
         id: errorDialog
