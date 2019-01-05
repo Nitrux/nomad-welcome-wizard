@@ -1,38 +1,33 @@
 sudo: required
-
 services:
-  - docker
-
+- docker
 addons:
   apt:
     packages:
-      - realpath
-
+    - realpath
 install:
-  - docker pull ubuntu:bionic
-  - wget https://raw.githubusercontent.com/Nitrux/nitrux-repository-util/master/nxos-repository-util.sh -O nxos-repository-util.sh
-  - chmod +x nxos-repository-util.sh
-
+- docker pull ubuntu:bionic
+- wget https://raw.githubusercontent.com/Nitrux/nitrux-repository-util/master/nxos-repository-util.sh
+  -O nxos-repository-util.sh
+- chmod +x nxos-repository-util.sh
 script:
- - docker run --rm -v $(pwd)/:/build/ -w /build/ ubuntu:bionic /bin/bash travis-build.sh
-
+- docker run --rm -v $(pwd)/:/build/ -w /build/ ubuntu:bionic /bin/bash travis-build.sh
 branches:
   only:
-    - master
-    - development
-
+  - master
+  - development
 deploy:
-  - provider: script
-    script: ./source/nxos-repository-util.sh upload testing *.deb
-    skip_cleanup: true
-    on:
-      branch: master
-      
-  - provider: script
-    script: ./source/nxos-repository-util.sh upload development *.deb
-    skip_cleanup: true
-    on:
-      branch: development
-
+- provider: script
+  script: "./source/nxos-repository-util.sh upload testing *.deb"
+  skip_cleanup: true
+  on:
+    branch: master
+- provider: script
+  script: "./source/nxos-repository-util.sh upload development *.deb"
+  skip_cleanup: true
+  on:
+    branch: development
 notifications:
   email: false
+  slack:
+    secure: fn1TG1Gh4o2jZ6oKVPIanXeLRnb9a1ujY4s3mLIgmytNQQgaw5aw98T8pkPM1fAUP0iCktR+qyXbSVbz5F1UdGnEgTdO2nXrpHpLMT5lNKWD/l+FhyO3M1W2a6J62f7j2ZrhHcDWDHZ6/2ZxJoR9R56iVLljQVAQkET6mToHZGFKn7sS/vyo7IR9SadIPGOUwLVvzFu+K2xfhAihFZbfgjXZjsdAtITJThCZrpq3psA8tpAGrtxsoCN2BLfPnu1iQ2f0i7dhNoAeuaXmiyneT2aNijzWa2DkOd9Y/+c9Omr5HTQAs1lL6JCOQ74SabHBEpRTkS3aFPLfyFPbUOokJqx7OtF4qyw45aWHdaFlTe7rTPYS1bPL2R4TzOBZ0ITzqhQVFjU8T74Q1M5H+D26/9NIeXVMmi9IgT/IjhFk/tzrnC6YEOoTN/1hoADlter5rP6UNFFV6BLjFDA5c0RisX2gLYeY9Rhr2E1kXFI/08aBW0i1BS4kZhWkb1CYJ/8yAIcEsQzYv67RARiWRYxtAv/JAcQSJqrxIdhEZHpeT7LakVbVZKT9fuLWjvoMi3147aT8bv0O/ooAfvTMOey/FFhp0Rz1m+KHYp6+KAVYb3yz+b0ihxxuNlmbTsgcHjOUV9iLWAVEExf+H2ZIQxXCBx/m//K79NAdOhlkwO8MWsE=
