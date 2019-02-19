@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.1.5) stable; urgency=medium
+
+  * Update images contents.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 18 Feb 2019 19:16:00 -0500
+
 nomad-welcome-wizard (1.1.4) stable; urgency=medium
 
   * Update images contents.
