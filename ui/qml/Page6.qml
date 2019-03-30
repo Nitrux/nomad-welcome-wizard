@@ -68,10 +68,10 @@ Page {
         anchors.bottom: parent.bottom
         anchors.leftMargin: 64
         anchors.bottomMargin: 128
-        text: "Software Center"
+        text: "Get New Software"
 
         onClicked: {
-            softwareCenterShellHelper.runCommand("nx_software_center");
+            softwareCenterShellHelper.runCommand("xdg-open https://www.appimagehub.com/");
         }
     }
 

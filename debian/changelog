@@ -1,3 +1,9 @@
+nomad-welcome-wizard (1.1.6) stable; urgency=medium
+
+  * Update software center link
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 29 Feb 2019 21:35:00 -0500
+
 nomad-welcome-wizard (1.1.5) stable; urgency=medium
 
   * Update images contents.
