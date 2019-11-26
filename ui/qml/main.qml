@@ -30,8 +30,7 @@ ApplicationWindow {
         id: footer
         height: 62
         color: "#3a3f41"
-        opacity: 0.5
-
+        
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
