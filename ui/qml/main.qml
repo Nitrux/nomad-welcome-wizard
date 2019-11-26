@@ -28,14 +28,15 @@ ApplicationWindow {
 
     Rectangle {
         id: footer
-        height: 48
-        color: "#f8f8f8"
+        height: 62
+        color: "#3a3f41"
+        opacity: 0.9
 
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
 
-        Button {
+        PlasmaComponents.Button {
             height: 32
             anchors.left: parent.left
             text: "Skip"
