@@ -6,54 +6,54 @@ import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
 Page {
     width: 2560
-    height: 1344
+    height: 1680
 
-    MessageDialog {
-        id: errorDialog
+//     MessageDialog {
+//         id: errorDialog
+// 
+//         title: "Error"
+//         icon: StandardIcon.Critical
+//         standardButtons: StandardButton.Ok
+//     }
 
-        title: "Error"
-        icon: StandardIcon.Critical
-        standardButtons: StandardButton.Ok
-    }
-
-    WelcomeWizard.ShellHelper {
-        id: softwareCenterShellHelper
-
-        onCmdComplete: {
-            console.log('SoftwareCenter :', returnCode);
-
-            if (returnCode > 0) {
-                errorDialog.text = "Error opening Software Center"
-                errorDialog.visible = true;
-            }
-        }
-    }
-
-    WelcomeWizard.ShellHelper {
-        id: nitruxCompendiumShellHelper
-
-        onCmdComplete: {
-            console.log('NitruxCompendium :', returnCode);
-
-            if (returnCode > 0) {
-                errorDialog.text = "Error opening Compendium"
-                errorDialog.visible = true;
-            }
-        }
-    }
-
-    WelcomeWizard.ShellHelper {
-        id: systemSettingsShellHelper
-
-        onCmdComplete: {
-            console.log('SystemSettings :', returnCode);
-
-            if (returnCode > 0) {
-                errorDialog.text = "Error opening System Settings"
-                errorDialog.visible = true;
-            }
-        }
-    }
+//     WelcomeWizard.ShellHelper {
+//         id: softwareCenterShellHelper
+// 
+//         onCmdComplete: {
+//             console.log('SoftwareCenter :', returnCode);
+// 
+//             if (returnCode > 0) {
+//                 errorDialog.text = "Error opening Software Center"
+//                 errorDialog.visible = true;
+//             }
+//         }
+//     }
+// 
+//     WelcomeWizard.ShellHelper {
+//         id: nitruxCompendiumShellHelper
+// 
+//         onCmdComplete: {
+//             console.log('NitruxCompendium :', returnCode);
+// 
+//             if (returnCode > 0) {
+//                 errorDialog.text = "Error opening Compendium"
+//                 errorDialog.visible = true;
+//             }
+//         }
+//     }
+// 
+//     WelcomeWizard.ShellHelper {
+//         id: systemSettingsShellHelper
+// 
+//         onCmdComplete: {
+//             console.log('SystemSettings :', returnCode);
+// 
+//             if (returnCode > 0) {
+//                 errorDialog.text = "Error opening System Settings"
+//                 errorDialog.visible = true;
+//             }
+//         }
+//     }
 
     Image {
         anchors.fill: parent
@@ -61,44 +61,44 @@ Page {
         source: "images/backgrounds/page6.png"
     }
 
-    Button {
-        height:32
+//     Button {
+//         height:32
+// 
+//         anchors.left: parent.left
+//         anchors.bottom: parent.bottom
+//         anchors.leftMargin: 64
+//         anchors.bottomMargin: 128
+//         text: "Get New Software"
+// 
+//         onClicked: {
+//             softwareCenterShellHelper.runCommand("xdg-open https://www.appimagehub.com/");
+//         }
+//     }
 
-        anchors.left: parent.left
-        anchors.bottom: parent.bottom
-        anchors.leftMargin: 64
-        anchors.bottomMargin: 128
-        text: "Get New Software"
+//     Button {
+//         height:32
+// 
+//         anchors.horizontalCenter: parent.horizontalCenter
+//         anchors.bottom: parent.bottom
+//         anchors.bottomMargin: 128
+//         text: "Find Support"
+// 
+//         onClicked: {
+//             nitruxCompendiumShellHelper.runCommand("xdg-open https://nxos.org/en/compendium/#help-and-support");
+//         }
+//     }
 
-        onClicked: {
-            softwareCenterShellHelper.runCommand("xdg-open https://www.appimagehub.com/");
-        }
-    }
-
-    Button {
-        height:32
-
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 128
-        text: "Find Support"
-
-        onClicked: {
-            nitruxCompendiumShellHelper.runCommand("xdg-open https://nxos.org/en/compendium/#help-and-support");
-        }
-    }
-
-    Button {
-        height:32
-
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.rightMargin: 64
-        anchors.bottomMargin: 128
-        text: "Open System Settings"
-
-        onClicked: {
-            systemSettingsShellHelper.runCommand("systemsettings5");
-        }
-    }
+//     Button {
+//         height:32
+// 
+//         anchors.right: parent.right
+//         anchors.bottom: parent.bottom
+//         anchors.rightMargin: 64
+//         anchors.bottomMargin: 128
+//         text: "Open System Settings"
+// 
+//         onClicked: {
+//             systemSettingsShellHelper.runCommand("systemsettings5");
+//         }
+//     }
 }

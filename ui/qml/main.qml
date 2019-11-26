@@ -1,6 +1,9 @@
 import QtQuick 2.10
+import QtGraphicalEffects 1.0
 import QtQuick.Controls 2.3
 import QtQuick.Window 2.3
+
+import org.kde.plasma.components 2.0 as PlasmaComponents
 
 ApplicationWindow {
     title: "Welcome Wizard"
@@ -53,8 +56,8 @@ ApplicationWindow {
             count: swipeView.count
             currentIndex: swipeView.currentIndex
         }
-
-        Button {
+        
+        PlasmaComponents.Button {
             height: 32
             anchors.right: parent.right
             text: "Next"
@@ -67,8 +70,8 @@ ApplicationWindow {
                 swipeView.setCurrentIndex(curIndex < swipeView.count-1 ? ++curIndex : swipeView.count-1)
             }
         }
-
-        Button {
+        
+        PlasmaComponents.Button {
             height: 32
             anchors.right: parent.right
             text: "Finish"
@@ -80,5 +83,6 @@ ApplicationWindow {
                 Qt.quit();
             }
         }
+
     }
 }

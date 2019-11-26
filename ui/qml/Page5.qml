@@ -3,7 +3,7 @@ import QtQuick.Controls 2.3
 
 Page {
     width: 2560
-    height: 1344
+    height: 1680
 
     Image {
         anchors.fill: parent
