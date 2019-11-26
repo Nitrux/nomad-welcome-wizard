@@ -9,7 +9,7 @@ import org.kde.plasma.components 2.0 as PlasmaComponents
 
 
 Page {
-    width: 2560
+    width: 3840
     height: 1680
 
 //     MessageDialog {
@@ -61,7 +61,7 @@ Page {
 
     Image {
         anchors.fill: parent
-        fillMode: Image.PreserveAspectFit
+        fillMode: Image.PreserveAspectCrop
         source: "images/backgrounds/page6.png"
     }
 
