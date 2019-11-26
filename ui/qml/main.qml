@@ -51,7 +51,7 @@ ApplicationWindow {
 
         PageIndicator {
             id: indicator
-
+            color: "#26C6DA"
             anchors.centerIn: footer
 
             count: swipeView.count

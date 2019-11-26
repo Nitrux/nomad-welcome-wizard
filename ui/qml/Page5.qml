@@ -7,7 +7,7 @@ Page {
 
     Image {
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectFit
         source: "images/backgrounds/page5.png"
     }
 }
