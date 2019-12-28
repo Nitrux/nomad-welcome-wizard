@@ -3,6 +3,8 @@ import QtGraphicalEffects 1.0
 import QtQuick.Controls 2.3
 import QtQuick.Window 2.3
 
+import org.nxos.welcomewizard 1.0 as WelcomeWizard
+
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
 ApplicationWindow {
@@ -24,6 +26,14 @@ ApplicationWindow {
         Page4 {}
         Page5 {}
         Page6 {}
+    }
+    
+        MessageDialog {
+        id: errorDialog
+
+        title: "Error"
+        icon: StandardIcon.Critical
+        standardButtons: StandardButton.Ok
     }
 
     WelcomeWizard.ShellHelper {
