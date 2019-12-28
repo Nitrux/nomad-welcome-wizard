@@ -1,3 +1,9 @@
+nx-welcome-wizard (1.2.2.7) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 27 Dec 2019 18:24:00 -0500
+
 nx-welcome-wizard (1.2.2.6) stable; urgency=medium
 
   * Update package.

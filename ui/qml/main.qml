@@ -26,6 +26,19 @@ ApplicationWindow {
         Page6 {}
     }
 
+    WelcomeWizard.ShellHelper {
+        id: restartLatteShellHelper
+
+        onCmdComplete: {
+            console.log('RestartLatte :', returnCode);
+
+            if (returnCode > 0) {
+                errorDialog.text = "Error restarting Latte"
+                errorDialog.visible = true;
+            }
+        }
+    }
+    
     Rectangle {
         id: footer
         height: 62
@@ -84,6 +97,7 @@ ApplicationWindow {
 
             onClicked: {
                 Qt.quit();
+                restartLatteShellHelper.runCommand("latte-dock --replace &");
             }
         }
 
