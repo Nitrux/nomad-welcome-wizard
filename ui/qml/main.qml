@@ -53,7 +53,7 @@ ApplicationWindow {
     Rectangle {
         id: footer
         height: 62
-        color: "#3a3f41"
+        color: "#2b2c31"
         
         anchors.left: parent.left
         anchors.right: parent.right
