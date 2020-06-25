@@ -8,6 +8,8 @@ import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
+import org.nxos.welcomewizard 1.0 as WelcomeWizard
+
 ApplicationWindow {
     title: "Welcome Wizard"
     visible: true
@@ -66,10 +68,27 @@ ApplicationWindow {
             text: "Skip"
             anchors.verticalCenter: parent.verticalCenter
             anchors.leftMargin: 12
-            enabled: swipeView.currentIndex != (swipeView.count - 1)
+            visible: swipeView.currentIndex != (swipeView.count - 1)
 
             onClicked: {
                 swipeView.setCurrentIndex(swipeView.count - 1)
+            }
+        }
+
+        CheckBox {
+            height: 32
+            anchors.left: parent.left
+            text: "Show on startup"
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.leftMargin: 12
+            visible: swipeView.currentIndex == (swipeView.count - 1) && WelcomeWizard.Helper.isAutostartEnabled()
+            checked: true
+
+            onClicked: {
+                if (!this.checked) {
+                    WelcomeWizard.Helper.disableAutostart();
+                    this.visible = false;
+                }
             }
         }
 

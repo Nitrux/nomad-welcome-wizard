@@ -22,6 +22,8 @@ find_package(
 add_executable(
   ${PROJECT_NAME}
 
+  Helper.h
+  Helper.cpp
   ShellHelper.h
   ShellHelper.cpp
   main.cpp
