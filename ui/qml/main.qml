@@ -75,10 +75,11 @@ ApplicationWindow {
             }
         }
 
-        CheckBox {
-            height: 32
+        PlasmaComponents.CheckBox {
+            height: 22
             anchors.left: parent.left
             text: "Show on startup"
+            color: white
             anchors.verticalCenter: parent.verticalCenter
             anchors.leftMargin: 12
             visible: swipeView.currentIndex == (swipeView.count - 1) && WelcomeWizard.Helper.isAutostartEnabled()
