@@ -1,6 +1,12 @@
 import QtQuick 2.10
+import QtGraphicalEffects 1.0
 import QtQuick.Controls 2.3
 import QtQuick.Window 2.3
+import QtQuick.Dialogs 1.2
+
+import org.nxos.welcomewizard 1.0 as WelcomeWizard
+
+import org.kde.plasma.components 2.0 as PlasmaComponents
 
 import org.nxos.welcomewizard 1.0 as WelcomeWizard
 
@@ -24,18 +30,40 @@ ApplicationWindow {
         Page5 {}
         Page6 {}
     }
+    
+        MessageDialog {
+        id: errorDialog
 
+        title: "Error"
+        icon: StandardIcon.Critical
+        standardButtons: StandardButton.Ok
+    }
+
+    WelcomeWizard.ShellHelper {
+        id: restartLatteShellHelper
+
+        onCmdComplete: {
+            console.log('RestartLatte :', returnCode);
+
+            if (returnCode > 0) {
+                errorDialog.text = "Error restarting Latte"
+                errorDialog.visible = true;
+            }
+        }
+    }
+    
     Rectangle {
         id: footer
-        height: 48
-        color: "#f8f8f8"
-
+        height: 62
+        color: "#2b2c31"
+        
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.bottom: parent.bottom
 
-        Button {
+        PlasmaComponents.Button {
             height: 32
+            width: 96
             anchors.left: parent.left
             text: "Skip"
             anchors.verticalCenter: parent.verticalCenter
@@ -47,8 +75,8 @@ ApplicationWindow {
             }
         }
 
-        CheckBox {
-            height: 32
+        PlasmaComponents.CheckBox {
+            height: 22
             anchors.left: parent.left
             text: "Show on startup"
             anchors.verticalCenter: parent.verticalCenter
@@ -66,15 +94,16 @@ ApplicationWindow {
 
         PageIndicator {
             id: indicator
-
+            
             anchors.centerIn: footer
 
             count: swipeView.count
             currentIndex: swipeView.currentIndex
         }
-
-        Button {
+        
+        PlasmaComponents.Button {
             height: 32
+            width: 96
             anchors.right: parent.right
             text: "Next"
             anchors.verticalCenter: parent.verticalCenter
@@ -86,9 +115,10 @@ ApplicationWindow {
                 swipeView.setCurrentIndex(curIndex < swipeView.count-1 ? ++curIndex : swipeView.count-1)
             }
         }
-
-        Button {
+        
+        PlasmaComponents.Button {
             height: 32
+            width: 96
             anchors.right: parent.right
             text: "Finish"
             anchors.verticalCenter: parent.verticalCenter
@@ -97,7 +127,9 @@ ApplicationWindow {
 
             onClicked: {
                 Qt.quit();
+                restartLatteShellHelper.runCommand("latte-dock --replace &");
             }
         }
+
     }
 }

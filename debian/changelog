@@ -1,3 +1,117 @@
+nx-welcome-wizard (1.2.4) nitrux; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 29 Jan 2020 17:48:00 -0500
+
+nx-welcome-wizard (1.2.3) nitrux; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 26 Jan 2020 19:16:00 -0500
+
+nx-welcome-wizard (1.2.2.14) stable; urgency=medium
+
+  * Add checkbox to main window.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 25 Jan 2020 18:51:00 -0500
+ 
+nx-welcome-wizard (1.2.2.13) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Mon, 22 Jan 2020 04:31:00 -0500
+
+nx-welcome-wizard (1.2.2.12) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 19 Jan 2020 17:50:00 -0500
+
+nx-welcome-wizard (1.2.2.11) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 19 Jan 2020 04:41:00 -0500
+
+nx-welcome-wizard (1.2.2.10) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Sun, 19 Jan 2020 04:36:00 -0500
+
+nx-welcome-wizard (1.2.2.9) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 27 Dec 2019 19:54:00 -0500
+
+nx-welcome-wizard (1.2.2.8) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 27 Dec 2019 19:37:00 -0500
+
+nx-welcome-wizard (1.2.2.7) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Fri, 27 Dec 2019 18:24:00 -0500
+
+nx-welcome-wizard (1.2.2.6) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 13:55:00 -0500
+
+nx-welcome-wizard (1.2.2.5) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 13:37:00 -0500
+
+nx-welcome-wizard (1.2.2.4) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 13:17:00 -0500
+
+nx-welcome-wizard (1.2.2.3) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 13:11:00 -0500
+
+nx-welcome-wizard (1.2.2.2) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 12:32:00 -0500
+
+nx-welcome-wizard (1.2.2.1) stable; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 12:21:00 -0500
+
+nx-welcome-wizard (1.2.2) stable; urgency=medium
+
+  * Update slides.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 00:54:00 -0500
+
+nx-welcome-wizard (1.2.1) stable; urgency=medium
+
+  * Update slides, use themed buttons.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 00:45:00 -0500
+
+nx-welcome-wizard (1.2.0) stable; urgency=medium
+
+  * Update slides, use themed buttons.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Thu, 26 Nov 2019 00:17:00 -0500
+
 nx-welcome-wizard (1.1.9) stable; urgency=medium
 
   * Change package name.
