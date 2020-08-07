@@ -12,7 +12,7 @@ wget -qO /etc/apt/sources.list.d/neon-user-repo.list https://raw.githubuserconte
 ### Install Dependencies
 apt-get --yes update
 apt-get --yes dist-upgrade
-apt-get --yes install devscripts lintian build-essential automake autotools-dev equivs
+apt-get --yes install cmake extra-cmake-modules qtbase5-dev qtdeclarative5-dev devscripts lintian build-essential automake autotools-dev equivs
 mk-build-deps -i -t "apt-get --yes" -r
 
 ### Build Deb
