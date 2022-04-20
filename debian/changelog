@@ -1,3 +1,9 @@
+nx-welcome-wizard (1.2.5) nitrux; urgency=medium
+
+  * Update package.
+
+ -- Uri Herrera <uri_herrera@nxos.org>  Wed, 20 Apr 2022 07:29:00 -0500
+
 nx-welcome-wizard (1.2.4) nitrux; urgency=medium
 
   * Update package.
