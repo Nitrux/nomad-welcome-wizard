@@ -1,6 +1,6 @@
-# NX Welcome Wizard [![Build Status](https://travis-ci.org/Nitrux/nx-welcome-wizard.svg?branch=master)](https://travis-ci.org/Nitrux/nx-welcome-wizard) 
+# NX Welcome Wizard
 
-Welcome overlay for post-installation setup.
+Welcome app for post-installation setup.
 
 # Issues
 If you find problems with the contents of this repository please create an issue.
